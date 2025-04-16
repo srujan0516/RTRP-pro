@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-white flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-green-600 shadow-md p-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <img src="Community care logox.jpg" alt="Community Care Logo" class="w-10 h-10 rounded-full" />
+      <span class="text-xl font-bold text-white">Community Care</span>
+    </div>
+    <div class="space-x-4">
+      <button class="text-white hover:text-gray-200">Home</button>
+      <button class="text-white hover:text-gray-200">About</button>
+      <button class="text-white hover:text-gray-200">Contact</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow p-6">
+    <header class="text-center mb-8">
+      <div class="flex justify-center mb-4">
+        <img src="Community care logox.jpg" alt="Community Care Logo" class="w-24 h-24 rounded-full" />
+      </div>
+      <h1 class="text-4xl font-bold text-green-700 mb-2">Community Care</h1>
+      <p class="text-lg text-gray-600">Connecting People. Sharing Support.</p>
+    </header>
+
+    <!-- Tabs -->
+    <div class="max-w-xl mx-auto">
+      <div class="flex justify-center mb-4 bg-gray-100 rounded-lg overflow-hidden">
+        <button id="login-tab" class="w-1/2 py-2 px-4 text-center font-semibold bg-green-200 text-green-800">Login</button>
+        <button id="request-tab" class="w-1/2 py-2 px-4 text-center font-semibold text-gray-700">Request Help</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-content" class="bg-gray-50 p-6 rounded-lg shadow-md space-y-4">
+        <input type="email" placeholder="Email" class="w-full p-2 bg-gray-100 rounded border border-gray-300" />
+        <input type="password" placeholder="Password" class="w-full p-2 bg-gray-100 rounded border border-gray-300" />
+        <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Login</button>
+      </div>
+
+      <!-- Request Form -->
+      <div id="request-content" class="bg-gray-50 p-6 rounded-lg shadow-md space-y-4 hidden">
+        <input type="text" placeholder="Request Title" class="w-full p-2 bg-gray-100 rounded border border-gray-300" />
+        <textarea placeholder="Describe your need..." class="w-full p-2 bg-gray-100 rounded border border-gray-300"></textarea>
+        <input type="text" placeholder="Location" class="w-full p-2 bg-gray-100 rounded border border-gray-300" />
+        <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Submit Request</button>
+      </div>
+    </div>
+
+    <!-- Recent Requests -->
+    <section class="mt-12 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold text-green-700 mb-4">Recent Requests</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <h3 class="font-bold text-lg text-green-700">Need groceries delivered</h3>
+          <p class="text-gray-700 mt-1">I am unable to go out due to illness. Need someone to pick up groceries. Location: Downtown.</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+          <h3 class="font-bold text-lg text-green-700">Looking for tutoring help</h3>
+          <p class="text-gray-700 mt-1">Need help with math tutoring for my child. Prefer weekend sessions. Location: Midtown.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-center text-sm text-white py-4 shadow-inner">
+    © 2025 Community Care. All rights reserved.
+  </footer>
+
+  <!-- JavaScript for Tabs -->
+  <script>
+    const loginTab = document.getElementById('login-tab');
+    const requestTab = document.getElementById('request-tab');
+    const loginContent = document.getElementById('login-content');
+    const requestContent = document.getElementById('request-content');
+
+    loginTab.addEventListener('click', () => {
+      loginTab.classList.add('bg-green-200', 'text-green-800');
+      requestTab.classList.remove('bg-green-200', 'text-green-800');
+      loginContent.classList.remove('hidden');
+      requestContent.classList.add('hidden');
+    });
+
+    requestTab.addEventListener('click', () => {
+      requestTab.classList.add('bg-green-200', 'text-green-800');
+      loginTab.classList.remove('bg-green-200', 'text-green-800');
+      requestContent.classList.remove('hidden');
+      loginContent.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

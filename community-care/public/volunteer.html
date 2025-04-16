@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Page - CommUnity Care</title>
+  <link rel="stylesheet" href="volunteer.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar fade">
+    <div class="logo-title">
+      <img src="logo.png" alt="CommUnity Care Logo" class="logo" />
+      <h1>CommUnity Care</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Top Button -->
+  <div class="top-button fade">
+    <button id="myRequestsBtn">
+      <i class="fa-solid fa-envelope"></i> My Requests
+    </button>
+  </div>
+
+  <!-- Main Content (Two columns on large screens) -->
+  <main class="main-content fade">
+    <!-- Offered Services Section -->
+    <section class="user-card">
+      <h2>
+        <i class="fa-solid fa-hands-helping"></i> Your Offered Services
+      </h2>
+      <ul id="serviceList">
+        <!-- Added services will appear here -->
+      </ul>
+      <button id="openServiceModal" class="action-btn">
+        <i class="fa-solid fa-plus"></i> Add Service
+      </button>
+    </section>
+
+    <!-- Local Shops Section -->
+    <section class="user-card">
+      <h2>
+        <i class="fa-solid fa-store"></i> Your Local Shops
+      </h2>
+      <ul id="shopList">
+        <!-- Added shops will appear here -->
+      </ul>
+      <button id="openShopModal" class="action-btn">
+        <i class="fa-solid fa-plus"></i> Add Local Shop
+      </button>
+    </section>
+  </main>
+
+  <!-- Modal for Adding Service -->
+  <div id="serviceModal" class="modal hidden">
+    <div class="modal-content fade">
+      <span class="close" id="closeServiceModal">&times;</span>
+      <h2><i class="fa-solid fa-hands-helping"></i> Add Volunteer Service</h2>
+      <form id="serviceForm" class="form-style">
+        <label for="serviceName">Service Name</label>
+        <input type="text" id="serviceName" placeholder="Enter service name" required />
+
+        <label for="serviceDescription">Service Description</label>
+        <textarea id="serviceDescription" placeholder="Enter a brief description" required></textarea>
+
+        <label for="serviceLocation">Service Location</label>
+        <input type="text" id="serviceLocation" placeholder="Enter location" required />
+
+        <label for="serviceMobile">Contact Number</label>
+        <input type="tel" id="serviceMobile" placeholder="Enter contact number" required />
+
+        <button type="submit" class="submit-btn">Add Service</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal for Adding Shop -->
+  <div id="shopModal" class="modal hidden">
+    <div class="modal-content fade">
+      <span class="close" id="closeShopModal">&times;</span>
+      <h2><i class="fa-solid fa-store"></i> Add Local Shop</h2>
+      <form id="shopForm" class="form-style">
+        <label for="shopName">Shop Name</label>
+        <input type="text" id="shopName" placeholder="Enter shop name" required />
+
+        <label for="shopDescription">Shop Description</label>
+        <textarea id="shopDescription" placeholder="Enter shop description" required></textarea>
+
+        <label for="shopLocation">Shop Location</label>
+        <input type="text" id="shopLocation" placeholder="Enter location" required />
+
+        <label for="shopMobile">Contact Number</label>
+        <input type="tel" id="shopMobile" placeholder="Enter contact number" required />
+
+        <button type="submit" class="submit-btn">Add Shop</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal for My Requests -->
+  <div id="requestsModal" class="modal hidden">
+    <div class="modal-content fade">
+      <span class="close" id="closeRequestsModal">&times;</span>
+      <h2><i class="fa-solid fa-list-check"></i> My Requests</h2>
+      <ul id="requestsList">
+        <!-- Aggregated requests will appear here -->
+        <li>No requests available.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer fade">
+    <p>
+      <i class="fa-solid fa-envelope"></i> Contact Us: +91-XXXXXXXXXX | community@care.org
+    </p>
+  </footer>
+
+  <script src="volunteer.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #446A7F;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #446A7F;
+    margin-bottom: 20px;
+}
+
+.requests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.request-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.request-card:hover {
+    transform: scale(1.05);
+}
+
+.request-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background: #446A7F;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}

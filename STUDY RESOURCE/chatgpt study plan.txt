@@ -1,0 +1,55 @@
+https://chatgpt.com/share/679d8fc1-4b00-800d-b887-83b45e56550e
+
+
+
+Month 1: Foundations + Browser Extension
+Week 1 (HTML/CSS): Learn basic web development.
+
+Day 1–3: Learn HTML (structure).
+Day 4–7: Learn CSS (styling and layouts).
+Goal: Create a simple webpage (e.g., a personal portfolio or landing page).
+Week 2 (JavaScript Basics): Learn programming fundamentals.
+
+Day 1–3: Learn variables, loops, and functions.
+Day 4–7: Practice DOM manipulation (buttons, text updates).
+Goal: Build a simple app like a to-do list or counter.
+Week 3–4 (Browser Extension Basics):
+
+Day 1–3: Learn Browser APIs (chrome.tabs, chrome.storage).
+Day 4–7: Create a basic extension that logs active tabs.
+Day 8–14: Add functionality to save visited URLs and store them locally.
+Goal: A working browser extension that tracks browsing activity.
+Month 2: Backend Development
+Week 5 (Node.js Basics):
+
+Day 1–3: Learn how to create a simple API with Node.js + Express.
+Day 4–7: Build APIs to save and fetch browsing activity.
+Goal: Create an API with endpoints like POST /activity and GET /activity.
+Week 6 (Database Basics):
+
+Day 1–3: Learn MongoDB basics (storing and retrieving data).
+Day 4–7: Connect your API to a database.
+Goal: Store browsing activity in a database.
+Week 7–8 (Integrate Backend + Extension):
+
+Day 1–3: Update the browser extension to send data to your backend.
+Day 4–7: Test the full flow (extension → backend → database).
+Goal: A complete system that tracks and stores browsing data.
+Month 3: Web Dashboard
+Week 9–10 (React Basics):
+
+Day 1–3: Learn React fundamentals (components, state, props).
+Day 4–7: Build a simple dashboard layout with dummy data.
+Day 8–10: Fetch real data from your backend and display it in a table.
+Goal: A basic dashboard displaying browsing activity.
+Week 11 (Charts):
+
+Day 1–3: Learn Chart.js or Recharts and integrate a chart.
+Day 4–7: Visualize activity data (e.g., daily trends, time spent per website).
+Goal: A dashboard with interactive charts.
+Week 12 (Deployment + Final Touches):
+
+Day 1–2: Deploy your backend (Heroku/Render) and dashboard (Netlify).
+Day 3–4: Package your browser extension for personal use.
+Day 5–7: Test everything and refine the design.
+Goal: A fully deployed and functional project.
